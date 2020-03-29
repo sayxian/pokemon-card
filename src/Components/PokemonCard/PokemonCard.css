@@ -1,0 +1,11 @@
+.card-container {
+    background: rgba(225,222,100);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
