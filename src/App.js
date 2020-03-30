@@ -36,7 +36,7 @@ class App extends React.Component {
       <div className="App">
         <SearchBox 
         placeholder="Search for pokemon"
-        handleChange={event => this.setState({searchField:event.target.value})}/>
+        handlechange={event => this.setState({searchField:event.target.value})}/>
         <div className="card-list">
         {filteredPokemons.map(items => {
           return <PokemonCard key={items.url} name={items.name} url={items.url}/> })}
