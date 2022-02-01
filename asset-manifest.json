@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/pokemon_card/static/css/main.4898aac8.chunk.css",
-    "main.js": "/pokemon_card/static/js/main.8f11e3ea.chunk.js",
-    "main.js.map": "/pokemon_card/static/js/main.8f11e3ea.chunk.js.map",
-    "runtime-main.js": "/pokemon_card/static/js/runtime-main.266aab38.js",
-    "runtime-main.js.map": "/pokemon_card/static/js/runtime-main.266aab38.js.map",
-    "static/js/2.bda14b15.chunk.js": "/pokemon_card/static/js/2.bda14b15.chunk.js",
-    "static/js/2.bda14b15.chunk.js.map": "/pokemon_card/static/js/2.bda14b15.chunk.js.map",
-    "index.html": "/pokemon_card/index.html",
-    "precache-manifest.a675d7d01a2cac33c7de3a902ebed3a8.js": "/pokemon_card/precache-manifest.a675d7d01a2cac33c7de3a902ebed3a8.js",
-    "service-worker.js": "/pokemon_card/service-worker.js",
-    "static/css/main.4898aac8.chunk.css.map": "/pokemon_card/static/css/main.4898aac8.chunk.css.map",
-    "static/js/2.bda14b15.chunk.js.LICENSE.txt": "/pokemon_card/static/js/2.bda14b15.chunk.js.LICENSE.txt"
+    "main.css": "/pokemon-card/static/css/main.2ff0fdf7.chunk.css",
+    "main.js": "/pokemon-card/static/js/main.a98518c8.chunk.js",
+    "main.js.map": "/pokemon-card/static/js/main.a98518c8.chunk.js.map",
+    "runtime-main.js": "/pokemon-card/static/js/runtime-main.f8398b4a.js",
+    "runtime-main.js.map": "/pokemon-card/static/js/runtime-main.f8398b4a.js.map",
+    "static/js/2.35a613d7.chunk.js": "/pokemon-card/static/js/2.35a613d7.chunk.js",
+    "static/js/2.35a613d7.chunk.js.map": "/pokemon-card/static/js/2.35a613d7.chunk.js.map",
+    "index.html": "/pokemon-card/index.html",
+    "precache-manifest.9dc7b887829549102f8b07e1fedf9db5.js": "/pokemon-card/precache-manifest.9dc7b887829549102f8b07e1fedf9db5.js",
+    "service-worker.js": "/pokemon-card/service-worker.js",
+    "static/css/main.2ff0fdf7.chunk.css.map": "/pokemon-card/static/css/main.2ff0fdf7.chunk.css.map",
+    "static/js/2.35a613d7.chunk.js.LICENSE.txt": "/pokemon-card/static/js/2.35a613d7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.266aab38.js",
-    "static/js/2.bda14b15.chunk.js",
-    "static/css/main.4898aac8.chunk.css",
-    "static/js/main.8f11e3ea.chunk.js"
+    "static/js/runtime-main.f8398b4a.js",
+    "static/js/2.35a613d7.chunk.js",
+    "static/css/main.2ff0fdf7.chunk.css",
+    "static/js/main.a98518c8.chunk.js"
   ]
 }
