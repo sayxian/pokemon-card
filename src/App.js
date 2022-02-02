@@ -1,31 +1,35 @@
 import React from 'react';
 import './App.css';
-import PokemonCard from './Components/PokemonCard/PokemonCard';
-import {KantoPokemon} from './Components/KantoPokemon';
-import {SearchBox} from './Components/SearchBox/SearchBox';
+import PokemonCard from './Components/PokemonCard';
+import { SearchBox } from './Components/SearchBox';
 
+
+//TODO: to convert this to functional component and hooks instead
 class App extends React.Component {
-  constructor(){
+  constructor() {
     super();
-  this.state = {
-    pokemons: KantoPokemon.results,
-    searchField:''
-  };
-}
+    this.state = {
+      pokemons: [],
+      searchField: ''
+    };
+  }
 
 
-// Method to retrieve from pokeapi 
-// However, I took the .json out instead and made it into an obj
-// componentDidMount() {
-//   fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
-//   .then(response=>response.json())
-//   .then(poke => {
-//     this.setState({pokemons:poke.results});
-// })}
+  // TODO: to write to localstorage instead of set state, 
+  // and retrieve from localstorage
+  componentDidMount() {
+    if (!this.pokemons) {
+      fetch('https://pokeapi.co/api/v2/pokemon?limit=50')
+        .then(response => response.json())
+        .then(poke => {
+          this.setState({ pokemons: poke.results });
+        });
+    }
+  }
 
   render() {
 
-    const {pokemons,searchField} = this.state;
+    const { pokemons, searchField } = this.state;
     const filteredPokemons = pokemons.filter(pokemon => {
       return pokemon.name.toLowerCase().includes(searchField.toLowerCase());
     });
@@ -34,16 +38,17 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <SearchBox 
-        placeholder="Search for pokemon"
-        handlechange={event => this.setState({searchField:event.target.value})}/>
+        <SearchBox
+          placeholder="Search for pokemon"
+          handlechange={event => this.setState({ searchField: event.target.value })} />
         <div className="card-list">
-        {filteredPokemons.map(items => {
-          return <PokemonCard key={items.url} name={items.name} url={items.url}/> })}
-      </div>
+          {filteredPokemons.map(items => {
+            return <PokemonCard key={items.url} name={items.name} url={items.url} />
+          })}
+        </div>
       </div>
     );
-}
+  }
 }
 
 export default App;

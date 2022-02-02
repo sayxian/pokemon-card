@@ -6,7 +6,7 @@ const PokemonCard = ({name,url}) => {
     console.log(spriteUrl);
     return (
         <div className="card-container"> 
-            <img alt={name} src={spriteUrl} />
+            <img className="sprite-image" alt={name} src={spriteUrl} />
             <p>{name}</p>
         </div>
     );
