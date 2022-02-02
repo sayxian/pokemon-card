@@ -1,11 +1,26 @@
 .card-container {
-    background: rgba(225,222,100);
-    padding: 10px;
-    border: 1px solid black;
+    background: #fefefe;
+    padding: 0.5em;
+    margin: 10px;
+}
+
+.sprite-image {
+    background: #f2f2f2;
     border-radius: 5px;
-    margin: 5px;
 }
 
 .card-container:hover {
-    transform: scale(1.05);
+    animation: MoveUpDown 0.5s linear;
 }
+
+@keyframes MoveUpDown {
+    0%, 50%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-0.3em);
+      }
+    75% {
+        transform: translateY(0.3em); 
+    }
+  }

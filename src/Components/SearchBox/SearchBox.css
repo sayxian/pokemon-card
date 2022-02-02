@@ -1,0 +1,22 @@
+.searchbox {
+    max-width: 30%;
+    margin: 1em auto;
+    font-size: 2vw;
+    text-align: center;
+    border:none;
+    border-bottom: 0.1em solid #1890ff;
+}
+
+.searchbox:focus {
+    outline: none;
+    text-align: left;
+}
+
+.searchbox:hover {
+    animation: changeColor 1s linear 3;
+}
+
+@keyframes changeColor {
+    0%, 100%     {border-bottom: 0.1em solid #1890ff;}
+    50.0%  {border-bottom:  0.1em solid #f2f2f2;}
+}
