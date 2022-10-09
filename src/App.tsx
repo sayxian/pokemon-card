@@ -34,13 +34,13 @@ export const App = () => {
           target: { value: React.SetStateAction<string> };
         }) => setSearchField(event.target.value)}
       />
-      <div className="card-list">
-        {filteredPokemons.map((items) => {
-          return (
-            <PokemonCard key={items.url} name={items.name} url={items.url} />
-          );
-        })}
+        <div className="card-list">
+          {filteredPokemons.map((items) => {
+            return (
+              <PokemonCard key={items.url} name={items.name} url={items.url} />
+            );
+          })}
+        </div>
       </div>
-    </div>
   );
 };
